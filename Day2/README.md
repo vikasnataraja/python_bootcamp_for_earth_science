@@ -7,7 +7,7 @@ Day 2 builds on Day 1 foundations (variables, functions, lists, and basic plotti
 | Lecture | Folder | Topics |
 |---------|--------|--------|
 | 1 | `Lecture1_Arrays_and_Plotting_2/` | NumPy arrays, array manipulation, matplotlib (1D, 2D, histograms) |
-| 2 | `Lecture2_If_statements/` | `if` / `elif` / `else`, comparison operators, `in` membership |
+| 2 | `Lecture2_If_statements/` | `if` / `elif` / `else`, comparison operators, `in` membership, `and` / `or`, wind & season examples |
 | 3 | `Lecture3_Loops/` | For-loops, loops + if on lidar wind data, hourly aggregation capstone |
 
 ## Folder Contents
