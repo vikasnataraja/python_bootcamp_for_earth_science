@@ -82,12 +82,25 @@ pd.read_csv(DATA_FOLDER + "boco_air_temp.csv")
 ```
 
 ### Notebook colors
-- **Teal** — required student tasks
-- **Red** — optional challenges / dive deeper
+- **Teal** (`#0F766E`) — required student tasks
+- **Red** (`#B91C1C`) — optional challenges / dive deeper
+
+Use HTML `<font color="#0F766E">...</font>` so colors render in Google Colab as well as local Jupyter.
+
+### Figures
+Static lesson images live once under each day’s `figures/` folder. Notebooks in `Lecture_*` or `Solutions/` display them with:
+
+```python
+from IPython.display import Image, display
+display(Image("../figures/example.png"))
+```
+
+This should work in Google Colab after Drive mount (markdown `attachment:` images and relative markdown image paths do not).
 
 ### File naming
 ```text
 Day_N_<big_topic>/
+  figures/                        # shared static images for the day
   Lecture_K_<mini_topic>/
     DN_Lesson_K.ipynb
     DN_Challenge_K.ipynb          # optional
