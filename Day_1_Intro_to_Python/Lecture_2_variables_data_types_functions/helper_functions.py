@@ -2,7 +2,7 @@
 def multiply_by_six(input_value):
     return 6 * input_value
 
-# The following function defined as 'print_full_name' will print the combination of names and doesn't return any values
+# The following function defined as 'print_greeting' will print the combination of names and doesn't return any values
 def print_greeting(first_name, middle_initial, last_name):
     print("Hello!")
     print("My name is " + first_name + " " + middle_initial + " " + last_name)
