@@ -14,6 +14,7 @@ The project has always been a department-wide effort. Because notebooks were edi
 - Becca Baiman
 - Genevieve Clow
 - Devon Dunmire
+- Maxwell Elling
 - Tina Geller
 - Kara Hartig
 - Sean Leister
@@ -28,6 +29,7 @@ The project has always been a department-wide effort. Because notebooks were edi
 - Alex Rybchuk
 - Megan Thompson-Munson
 - Brianna Undzis
+- Shawn Wang
 - Mikell Warms
 - Matt Watwood
 - Chris Wyburn-Powell
@@ -35,9 +37,7 @@ The project has always been a department-wide effort. Because notebooks were edi
 
 ## Course structure (5 days)
 
-Each day has up to three lectures. Shared data lives in [`Datasets/`](Datasets/). Student notebooks are under each day’s `Lecture_*` folders; answer keys are in that day’s `Solutions/` folder.
-
-Earlier 9–10 day REU materials are archived under [`Old/`](Old/) for reference (notebooks and docs only; no data files).
+Each day has up to three lectures. Shared data lives in [`Datasets/`](Datasets/). Student notebooks are under each day’s `Lecture_*` folders; answer keys may be available from the instructors.
 
 ### Day 1 — Intro to Python
 - Lecture 1: Intro to coding — [`Day_1_Intro_to_Python/Lecture_1_coding/`](Day_1_Intro_to_Python/Lecture_1_coding/)
@@ -65,8 +65,8 @@ Flexible wrap-up: data exploration, student-requested special topics, and toolin
 
 ## How to use these notebooks
 
-### Environment
-Use the conda environment defined in [`reu_env.yml`](reu_env.yml) (name retained from the REU materials).
+### Environment (not in Google Colab)
+Use the conda environment defined in [`reu_env.yml`](reu_env.yml).
 
 ### Data paths
 Notebooks that load files set this in the first code cell:
@@ -114,7 +114,4 @@ Day_N_<big_topic>/
     DN_Lesson_K.ipynb
     DN_Challenge_K.ipynb          # optional
     DN_Dive_Deeper_K.ipynb        # optional
-  Solutions/
-    DN_Lesson_K_solutions.ipynb
-    DN_Challenge_K_solutions.ipynb
 ```
