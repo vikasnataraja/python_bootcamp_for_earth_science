@@ -88,19 +88,28 @@ pd.read_csv(DATA_FOLDER + "boco_air_temp.csv")
 Use HTML `<font color="#0F766E">...</font>` so colors render in Google Colab as well as local Jupyter.
 
 ### Figures
-Static lesson images live once under each day’s `figures/` folder. Notebooks in `Lecture_*` or `Solutions/` display them with:
+Static lesson images live in [`Figures/`](Figures/) at the repo root (same pattern as [`Datasets/`](Datasets/)). Notebooks set `FIGURES_FOLDER` next to `DATA_FOLDER`:
+
+```python
+# Google Colab (after Drive mount)
+FIGURES_FOLDER = "/content/drive/MyDrive/python_bootcamp/python_bootcamp_for_earth_science/Figures/"
+
+# Local Jupyter
+FIGURES_FOLDER = "../../Figures/"
+```
+
+Example:
 
 ```python
 from IPython.display import Image, display
-display(Image("../figures/example.png"))
+display(Image(FIGURES_FOLDER + "lidar_array_structure.png"))
 ```
-
-This should work in Google Colab after Drive mount (markdown `attachment:` images and relative markdown image paths do not).
 
 ### File naming
 ```text
+Datasets/                         # shared data files
+Figures/                          # shared static lesson images
 Day_N_<big_topic>/
-  figures/                        # shared static images for the day
   Lecture_K_<mini_topic>/
     DN_Lesson_K.ipynb
     DN_Challenge_K.ipynb          # optional
